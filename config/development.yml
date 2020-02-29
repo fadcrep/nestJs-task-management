@@ -1,0 +1,8 @@
+db:
+  host: "localhost"
+  username: "fadcrepin"
+  password: "jsldfdmp"
+  synchronize: true
+
+jwt:
+  secret: "topSecret51"
