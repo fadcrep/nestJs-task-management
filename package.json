@@ -10,7 +10,7 @@
     "start": "ts-node -r tsconfig-paths/register src/main.ts",
     "start:dev": "NODE_ENV=development tsc-watch -p tsconfig.build.json --onSuccess \"node dist/main.js\"",
     "start:debug": "tsc-watch -p tsconfig.build.json --onSuccess \"node --inspect-brk dist/main.js\"",
-    "start:prod": "node dist/main.js",
+    "start:prod": "NODE_ENV=production node dist/main.js",
     "lint": "tslint -p tsconfig.json -c tslint.json",
     "test": "jest",
     "test:watch": "jest --watch",
@@ -25,7 +25,7 @@
     "@nestjs/passport": "^6.1.1",
     "@nestjs/platform-express": "^6.0.0",
     "@nestjs/typeorm": "^6.2.0",
-    "bcrypt": "^3.0.8",
+    "bcryptjs": "^2.4.3",
     "class-transformer": "^0.2.3",
     "class-validator": "^0.11.0",
     "config": "^3.2.6",
@@ -35,7 +35,11 @@
     "reflect-metadata": "^0.1.12",
     "rimraf": "^2.6.2",
     "rxjs": "^6.3.3",
-    "typeorm": "^0.2.22"
+    "typeorm": "^0.2.22",
+    "@types/express": "4.16.1",
+    "@types/node": "11.13.4",
+    "ts-node": "8.1.0",
+    "typescript": "3.4.3"
   },
   "devDependencies": {
     "@nestjs/testing": "^6.0.0",
